@@ -14,11 +14,11 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-for(var i = 0; i < enemyNames.length; i++) {
+
   console.log(enemyNames[i]);
   console.log(i);
   console.log(enemyNames[i] + " is at " + i + " index");
-}
+
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
     // ask user if they'd liked to fight or run
@@ -75,8 +75,9 @@ var fight = function(enemyName) {
   }
 };;
 for(var i = 0; i < enemyNames.length; i++) {
+  if (playerHealth > 0){
+    window.alert("Welcome to Robot Gladiators! Round " + (i + 1 ) )
   var pickedEnemyName = enemyNames[i];
   enemyHealth = 50;
-  // call fight function with enemy robot
   fight(pickedEnemyName);
-}
+  }}
