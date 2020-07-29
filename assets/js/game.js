@@ -107,10 +107,10 @@ for(var i = 0; i < enemyNames.length; i++) {
   endGame();
  
 };
-<<<<<<< HEAD
+
 // start the game when the page loads
 
-=======
+
 var shop = function() {
   // ask player what they'd like to do
   var shopOptionPrompt = window.prompt("Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one: 'REFILL', 'UPGRADE', or 'LEAVE' to make a choice");
@@ -152,7 +152,6 @@ switch (shopOptionPrompt) {
     break;
 }
 };
->>>>>>> feature/shop
 // function to end the entire game
 var endGame = function() {
   // if player is still alive, player wins!
@@ -172,9 +171,7 @@ if (playAgainConfirm) {
 else {
   window.alert("Thank you for playing Robot Gladiators! Come back soon!");
 }
-<<<<<<< HEAD
-=======
+
 
 // start the game when the page loads
->>>>>>> feature/shop
 startGame();
